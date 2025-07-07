@@ -27,12 +27,13 @@ The goal is to ensure efficient use of parking resources through data-driven, ex
 
 ```mermaid
 flowchart TD
-    A[Streaming Input<br> (Pathway)] --> B[Real-Time Feature Extraction]
+    A[Streaming Input (Pathway)] --> B[Real-Time Feature Extraction]
     B --> C1[Model 1: Linear Pricing]
     B --> C2[Model 2: Demand-Based Pricing]
     B --> C3[Model 3: Competitive Pricing]
     C1 --> D[Price Output]
     C2 --> D
     C3 --> D
-    D --> E[Live Visualization<br>(Bokeh)]
+    D --> E[Live Visualization with Bokeh]
     D --> F[Optional: Vehicle Rerouting]
+
